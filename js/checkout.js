@@ -4,23 +4,27 @@
  */
 document.addEventListener('DOMContentLoaded', function() {
     // Elementi del checkout
-    const orderItemsContainer = document.getElementById('orderItems');
+    const checkoutItemsContainer = document.getElementById('checkoutItems');
     const subtotalElement = document.getElementById('subtotal');
     const taxElement = document.getElementById('tax');
     const totalElement = document.getElementById('total');
-    const placeOrderBtn = document.getElementById('placeOrderBtn');
-    const orderConfirmationModal = new bootstrap.Modal(document.getElementById('orderConfirmationModal'), {
-        keyboard: false,
-        backdrop: 'static'
-    });
+    const checkoutForm = document.getElementById('checkoutForm');
+    
+    // Modal di conferma ordine
+    const orderConfirmationModal = document.getElementById('orderConfirmationModal');
+    let orderConfirmationModalInstance = null;
+    if (orderConfirmationModal) {
+        orderConfirmationModalInstance = new bootstrap.Modal(orderConfirmationModal, {
+            keyboard: false,
+            backdrop: 'static'
+        });
+    }
     
     // Metodi di pagamento
     const creditCardRadio = document.getElementById('creditCard');
     const paypalRadio = document.getElementById('paypal');
     const bankTransferRadio = document.getElementById('bankTransfer');
     const creditCardForm = document.getElementById('creditCardForm');
-    const paypalForm = document.getElementById('paypalForm');
-    const bankTransferForm = document.getElementById('bankTransferForm');
     
     // Gestione dei metodi di pagamento
     if (creditCardRadio && paypalRadio && bankTransferRadio) {
@@ -29,69 +33,85 @@ document.addEventListener('DOMContentLoaded', function() {
         bankTransferRadio.addEventListener('change', updatePaymentForms);
         
         function updatePaymentForms() {
-            if (creditCardRadio.checked) {
-                creditCardForm.classList.remove('d-none');
-                paypalForm.classList.add('d-none');
-                bankTransferForm.classList.add('d-none');
-            } else if (paypalRadio.checked) {
-                creditCardForm.classList.add('d-none');
-                paypalForm.classList.remove('d-none');
-                bankTransferForm.classList.add('d-none');
-            } else if (bankTransferRadio.checked) {
-                creditCardForm.classList.add('d-none');
-                paypalForm.classList.add('d-none');
-                bankTransferForm.classList.remove('d-none');
+            if (creditCardForm) {
+                if (creditCardRadio.checked) {
+                    creditCardForm.classList.remove('d-none');
+                } else {
+                    creditCardForm.classList.add('d-none');
+                }
             }
+            
+            // Nota: paypalForm e bankTransferForm non esistono nell'HTML attuale
+            // ma potrebbero essere aggiunti in futuro
         }
     }
     
-    // Carica gli articoli dal carrello
-    if (orderItemsContainer) {
-        loadOrderItems();
+    // Carica gli articoli dal carrello nella pagina di checkout
+    if (checkoutItemsContainer) {
+        loadCheckoutItems();
     }
     
-    // Event listener per il pulsante di conferma ordine
-    if (placeOrderBtn) {
-        placeOrderBtn.addEventListener('click', function() {
+    // Gestione del form di checkout
+    if (checkoutForm) {
+        checkoutForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
             // Validazione del form
-            if (validateCheckoutForm()) {
+            if (this.checkValidity()) {
                 // Genera un numero d'ordine casuale
                 const orderNumber = 'CN-' + Math.floor(100000 + Math.random() * 900000);
-                document.getElementById('orderNumber').textContent = orderNumber;
+                
+                // Aggiorna il numero d'ordine nel modal
+                const orderNumberElement = document.getElementById('orderNumber');
+                if (orderNumberElement) {
+                    orderNumberElement.textContent = orderNumber;
+                }
                 
                 // Imposta la data dell'ordine
                 const today = new Date();
                 const formattedDate = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
-                document.getElementById('orderDate').textContent = formattedDate;
+                const orderDateElement = document.getElementById('orderDate');
+                if (orderDateElement) {
+                    orderDateElement.textContent = formattedDate;
+                }
                 
                 // Mostra il modal di conferma
-                orderConfirmationModal.show();
+                if (orderConfirmationModalInstance) {
+                    orderConfirmationModalInstance.show();
+                }
                 
                 // Svuota il carrello
-                window.clearCart();
+                if (window.clearCart) {
+                    window.clearCart();
+                }
+            } else {
+                // Aggiungi la classe was-validated per mostrare i messaggi di errore
+                this.classList.add('was-validated');
             }
         });
     }
     
-    // Funzione per caricare gli articoli dal carrello
-    function loadOrderItems() {
+    // Funzione per caricare gli articoli dal carrello nella pagina di checkout
+    function loadCheckoutItems() {
         // Ottieni gli articoli dal carrello
         const cart = window.getCartItems ? window.getCartItems() : [];
         
+        if (!checkoutItemsContainer) return;
+        
         if (cart.length === 0) {
-            orderItemsContainer.innerHTML = '<p class="text-center">Il tuo carrello è vuoto</p>';
+            checkoutItemsContainer.innerHTML = '<p class="text-center">Il tuo carrello è vuoto</p>';
             updateOrderSummary(0);
             return;
         }
         
-        let orderHTML = '';
+        let checkoutHTML = '';
         let subtotal = 0;
         
         cart.forEach(item => {
             const itemTotal = item.price * item.quantity;
             subtotal += itemTotal;
             
-            orderHTML += `
+            checkoutHTML += `
                 <div class="d-flex mb-3">
                     <div class="flex-shrink-0">
                         <img src="${item.img || 'img/placeholder.jpg'}" alt="${item.name}" width="60" height="60" class="rounded">
@@ -105,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
         });
         
-        orderItemsContainer.innerHTML = orderHTML;
+        checkoutItemsContainer.innerHTML = checkoutHTML;
         updateOrderSummary(subtotal);
     }
     
@@ -118,43 +138,5 @@ document.addEventListener('DOMContentLoaded', function() {
         if (subtotalElement) subtotalElement.textContent = '€' + subtotal.toFixed(2);
         if (taxElement) taxElement.textContent = '€' + tax.toFixed(2);
         if (totalElement) totalElement.textContent = '€' + total.toFixed(2);
-        
-        // Disabilita il pulsante di conferma se il carrello è vuoto
-        if (placeOrderBtn) {
-            if (subtotal === 0) {
-                placeOrderBtn.setAttribute('disabled', 'disabled');
-            } else {
-                placeOrderBtn.removeAttribute('disabled');
-            }
-        }
-    }
-    
-    // Funzione per validare il form di checkout
-    function validateCheckoutForm() {
-        // Ottieni tutti i form
-        const checkoutForm = document.getElementById('checkoutForm');
-        const billingForm = document.getElementById('billingForm');
-        const paymentForm = document.getElementById('paymentForm');
-        const notesForm = document.getElementById('notesForm');
-        
-        // Verifica se i form esistono
-        if (!checkoutForm || !billingForm || !paymentForm || !notesForm) {
-            return false;
-        }
-        
-        // Aggiungi la classe was-validated per mostrare i messaggi di errore
-        checkoutForm.classList.add('was-validated');
-        billingForm.classList.add('was-validated');
-        paymentForm.classList.add('was-validated');
-        notesForm.classList.add('was-validated');
-        
-        // Verifica la validità dei form
-        const isCheckoutValid = checkoutForm.checkValidity();
-        const isBillingValid = billingForm.checkValidity();
-        const isPaymentValid = paymentForm.checkValidity();
-        const isNotesValid = notesForm.checkValidity();
-        
-        // Verifica se tutti i form sono validi
-        return isCheckoutValid && isBillingValid && isPaymentValid && isNotesValid;
     }
 });
