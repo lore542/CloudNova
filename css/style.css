@@ -68,6 +68,14 @@ a:hover {
     height: 3px;
     background-color: var(--primary);
 } */
+.service-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
 
 .lead {
     font-size: 1.2rem;
