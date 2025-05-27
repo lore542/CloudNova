@@ -1,0 +1,32 @@
+/* Stili per il footer */
+footer {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer-brand {
+    margin-bottom: 25px;
+}
+
+.social-icons-large a {
+    color: var(--light);
+    transition: color 0.3s;
+}
+
+.social-icons-large a:hover {
+    color: var(--primary);
+}
+
+.payment-methods {
+    margin-top: 20px;
+    color: var(--light);
+}
+
+.payment-methods i {
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.payment-methods i:hover {
+    color: var(--primary);
+}
