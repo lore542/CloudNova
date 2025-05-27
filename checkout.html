@@ -5,12 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CloudNova - Checkout</title>
     <!-- Bootstrap CSS -->
-    <link rel="icon" type="image/png" href="img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #3a7bd5 0%, #00d2ff 100%);
+        }
+        .checkout-summary {
+            position: sticky;
+            top: 20px;
+        }
+        .checkout-total {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #3a7bd5;
+        }
+        .footer-brand {
+            color: #fff;
+        }
+        .social-icons-large a {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -215,7 +235,7 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="termsCheck" required>
                                             <label class="form-check-label" for="termsCheck">
-                                                Ho letto e accetto i <a href="https://www.termsfeed.com/live/981def88-0081-43e6-b695-c87d01053b76" target="_blank">Termini e Condizioni</a> e la <a href="https://www.termsfeed.com/live/981def88-0081-43e6-b695-c87d01053b76" target="_blank">Privacy Policy</a> *
+                                                Ho letto e accetto i <a href="#" target="_blank">Termini e Condizioni</a> e la <a href="#" target="_blank">Privacy Policy</a> *
                                             </label>
                                         </div>
                                     </div>
@@ -374,10 +394,10 @@
                 <div class="col-lg-2 col-md-4 col-6 mb-4 mb-md-0">
                     <h5 class="mb-4">Legale</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://www.termsfeed.com/live/981def88-0081-43e6-b695-c87d01053b76" class="text-white text-decoration-none">Privacy Policy</a></li>
-                        <li class="mb-2"><a href="https://www.termsfeed.com/live/981def88-0081-43e6-b695-c87d01053b76" class="text-white text-decoration-none">Termini di Servizio</a></li>
-                        <li class="mb-2"><a href="https://www.termsfeed.com/live/981def88-0081-43e6-b695-c87d01053b76" class="text-white text-decoration-none">Cookie Policy</a></li>
-                        <li class="mb-2"><a href="https://www.termsfeed.com/live/981def88-0081-43e6-b695-c87d01053b76" class="text-white text-decoration-none">GDPR</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Termini di Servizio</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">GDPR</a></li>
                     </ul>
                 </div>
             </div>
@@ -388,11 +408,11 @@
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="social-icons-large">
-                        <a href="https://www.facebook.com/" class="me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/" class="me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/" class="me-3"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/" class="me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -401,8 +421,101 @@
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <!-- Custom JS -->
-    <script src="js/cart.js"></script>
-    <script src="js/checkout.js"></script>
+    <script>
+        // Gestione del carrello
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Aggiorna il conteggio del carrello nella navbar
+        function updateCartCount() {
+            const count = cart.reduce((total, item) => total + item.quantity, 0);
+            document.querySelectorAll('.cart-count').forEach(el => el.textContent = count);
+        }
+
+        // Mostra gli elementi del carrello nel riepilogo
+        function displayCartItems() {
+            const checkoutItems = document.getElementById('checkoutItems');
+            const subtotalEl = document.getElementById('subtotal');
+            const taxEl = document.getElementById('tax');
+            const totalEl = document.getElementById('total');
+            
+            if (cart.length === 0) {
+                checkoutItems.innerHTML = `
+                    <div class="text-center py-4">
+                        <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+                        <p>Il tuo carrello è vuoto</p>
+                        <a href="offerte.html" class="btn btn-primary mt-2">Sfoglia le Offerte</a>
+                    </div>
+                `;
+                subtotalEl.textContent = '€0.00';
+                taxEl.textContent = '€0.00';
+                totalEl.textContent = '€0.00';
+                return;
+            }
+            
+            let html = '';
+            const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+            const tax = subtotal * 0.22; // IVA al 22%
+            const total = subtotal + tax;
+            
+            cart.forEach(item => {
+                html += `
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <h6 class="mb-1">${item.name}</h6>
+                            <small class="text-muted">Quantità: ${item.quantity}</small>
+                        </div>
+                        <div class="text-end">
+                            <div class="fw-bold">€${(item.price * item.quantity).toFixed(2)}</div>
+                            <small class="text-muted">€${item.price.toFixed(2)}/mese</small>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            checkoutItems.innerHTML = html;
+            subtotalEl.textContent = `€${subtotal.toFixed(2)}`;
+            taxEl.textContent = `€${tax.toFixed(2)}`;
+            totalEl.textContent = `€${total.toFixed(2)}`;
+        }
+
+        // Gestione del form di checkout
+        function handleCheckoutForm() {
+            const form = document.getElementById('checkoutForm');
+            const modal = new bootstrap.Modal(document.getElementById('orderConfirmationModal'));
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (cart.length === 0) {
+                    alert('Il tuo carrello è vuoto. Aggiungi dei prodotti prima di procedere al checkout.');
+                    return;
+                }
+                
+                // Simula l'invio dei dati al server
+                setTimeout(() => {
+                    // Genera un numero d'ordine casuale
+                    const orderNumber = 'CN-' + Math.floor(10000 + Math.random() * 90000);
+                    document.getElementById('orderNumber').textContent = orderNumber;
+                    
+                    // Mostra il modal di conferma
+                    modal.show();
+                    
+                    // Svuota il carrello dopo il checkout
+                    cart = [];
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    updateCartCount();
+                }, 1000);
+            });
+        }
+
+        // Inizializza il checkout quando la pagina è caricata
+        document.addEventListener('DOMContentLoaded', function() {
+            displayCartItems();
+            handleCheckoutForm();
+            updateCartCount();
+        });
+    </script>
 </body>
 </html>
