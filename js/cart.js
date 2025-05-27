@@ -244,4 +244,15 @@ document.addEventListener('DOMContentLoaded', function() {
             toastElement.remove();
         });
     }
+
+    // Esporre funzioni globali per l'integrazione con checkout.js
+    window.getCartItems = function() {
+        return cart;
+    };
+    
+    window.clearCart = function() {
+        cart = [];
+        saveCart();
+        updateCartCount();
+    };
 });
