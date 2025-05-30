@@ -1,0 +1,88 @@
+{
+  "navbar": {
+    "azienda": "Unternehmen",
+    "tecnologia": "Technologie",
+    "servizi": "Dienstleistungen",
+    "clienti": "Kunden",
+    "contatti": "Kontakt",
+    "chiSiamo": "Über uns",
+    "nostri_valori": "Unsere Werte",
+    "perche_sceglierci": "Warum uns wählen",
+    "infrastruttura": "Infrastruktur",
+    "ia_integrata": "Integrierte KI",
+    "sostenibilita": "Nachhaltigkeit",
+    "panoramica": "Überblick",
+    "offerte": "Angebote",
+    "consulenza": "Beratung"
+  },
+  "hero": {
+    "title": "Die Zukunft der Cloud, angetrieben durch Künstliche Intelligenz",
+    "subtitle": "Transformieren Sie Ihre Infrastruktur, vervielfachen Sie Ihre Intelligenz. CloudNova bietet innovative Cloud-Lösungen mit integrierter KI für Unternehmen jeder Größe.",
+    "cta_offerte": "Entdecken Sie unsere Angebote",
+    "cta_contatti": "Kontaktieren Sie uns"
+  },
+  "chi_siamo": {
+    "title": "Über uns",
+    "subtitle": "Innovatoren im Cloud-Sektor mit Fokus auf die Integration künstlicher Intelligenz",
+    "storia_title": "Unsere Geschichte",
+    "storia_text": "CloudNova wurde 2020 aus der Vision einer Gruppe von Experten für Cloud Computing und künstliche Intelligenz geboren, mit dem Ziel, die Art und Weise zu revolutionieren, wie Unternehmen ihre digitalen Infrastrukturen nutzen und verwalten.",
+    "storia_text2": "In einer sich schnell entwickelnden technologischen Welt haben wir den Bedarf an Cloud-Lösungen erkannt, die nicht nur Rechenleistung und Speicher bieten, sondern auch nativ KI-Fähigkeiten integrieren, um jeden Aspekt der Infrastruktur zu optimieren.",
+    "missione_title": "Unsere Mission",
+    "missione_text": "Unsere Mission ist es, den Zugang zu fortschrittlichen Cloud-Technologien und künstlicher Intelligenz zu demokratisieren und diese leistungsstarken Ressourcen für Organisationen jeder Größe verfügbar und zugänglich zu machen.",
+    "missione_text2": "Wir glauben, dass die Kombination aus robusten Cloud-Infrastrukturen und integrierter künstlicher Intelligenz die Zukunft der Unternehmenstechnologie darstellt, und wir sind entschlossen, diese Transformation anzuführen."
+  },
+  "valori": {
+    "title": "Unsere Werte",
+    "subtitle": "Grundlegende Prinzipien, die unser Handeln leiten",
+    "integrita_title": "Integrität",
+    "integrita_text": "Wir handeln mit Ehrlichkeit und Transparenz in jeder Interaktion mit Kunden, Partnern und Mitarbeitern und halten stets unsere Zusagen ein.",
+    "innovazione_title": "Innovation",
+    "innovazione_text": "Wir forschen ständig nach neuen Lösungen und Technologien, um Marktbedürfnisse zu antizipieren und hochmoderne Dienstleistungen anzubieten.",
+    "collaborazione_title": "Zusammenarbeit",
+    "collaborazione_text": "Wir glauben an die Kraft der Teamarbeit und des Wissensaustauschs, um hervorragende Ergebnisse zu erzielen.",
+    "sostenibilita_title": "Nachhaltigkeit",
+    "sostenibilita_text": "Wir setzen uns dafür ein, die Umweltauswirkungen unserer Aktivitäten zu reduzieren und nachhaltige Praktiken im Technologiesektor zu fördern."
+  },
+  "cta_section": {
+    "title": "Bereit, Ihre Infrastruktur zu transformieren?",
+    "text": "Entdecken Sie, wie CloudNova Ihnen helfen kann, Ihre Abläufe zu optimieren und die Kraft der künstlichen Intelligenz zu nutzen.",
+    "button": "Buchen Sie eine kostenlose Beratung"
+  },
+  "infrastruttura": {
+    "title": "Infrastruktur",
+    "subtitle": "Hochmoderne Rechenzentren, konzipiert für Leistung, Sicherheit und Nachhaltigkeit",
+    "datacenter_title": "Rechenzentren der nächsten Generation",
+    "datacenter_text": "Unsere Rechenzentren sind nach den höchsten Standards für Sicherheit, Effizienz und Zuverlässigkeit konzipiert. Wir verwenden modernste Hardware und redundante Architekturen, um eine Verfügbarkeit von 99,99% zu gewährleisten.",
+    "sicurezza_title": "Fortschrittliche Sicherheit",
+    "sicurezza_text": "Mehrschichtiger physischer und digitaler Schutz mit 24/7-Überwachung und Einbruchserkennungssystemen.",
+    "connettivita_title": "Globale Konnektivität",
+    "connettivita_text": "Hochgeschwindigkeitsnetzwerk mit redundanten Verbindungen zu mehreren Anbietern, um minimale Latenz zu gewährleisten.",
+    "alimentazione_title": "Redundante Stromversorgung",
+    "alimentazione_text": "Mehrfache Stromversorgungssysteme mit Backup-Generatoren und USV, um die Betriebskontinuität zu gewährleisten.",
+    "raffreddamento_title": "Effiziente Kühlung",
+    "raffreddamento_text": "Fortschrittliche Kühlsysteme mit energiesparenden Technologien und präziser Temperaturkontrolle.",
+    "cta": "Entdecken Sie Housing-Lösungen"
+  },
+  "footer": {
+    "azienda": "Unternehmen",
+    "servizi": "Dienstleistungen",
+    "supporto": "Support",
+    "legale": "Rechtliches",
+    "centro_assistenza": "Hilfezentrum",
+    "faq": "FAQ",
+    "documentazione": "Dokumentation",
+    "status_servizi": "Dienststatus",
+    "privacy_policy": "Datenschutzrichtlinie",
+    "termini_servizio": "Nutzungsbedingungen",
+    "cookie_policy": "Cookie-Richtlinie",
+    "gdpr": "DSGVO",
+    "newsletter_title": "Newsletter",
+    "newsletter_text": "Abonnieren Sie unseren Newsletter, um Updates, Neuigkeiten und Sonderangebote zu erhalten.",
+    "newsletter_button": "Abonnieren",
+    "social_title": "Folgen Sie uns in sozialen Medien",
+    "copyright": "© 2025 CloudNova. Alle Rechte vorbehalten."
+  },
+  "toast": {
+    "language_changed": "Sprache geändert zu: Deutsch"
+  }
+}

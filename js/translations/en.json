@@ -1,0 +1,88 @@
+{
+  "navbar": {
+    "azienda": "Company",
+    "tecnologia": "Technology",
+    "servizi": "Services",
+    "clienti": "Clients",
+    "contatti": "Contact",
+    "chiSiamo": "About Us",
+    "nostri_valori": "Our Values",
+    "perche_sceglierci": "Why Choose Us",
+    "infrastruttura": "Infrastructure",
+    "ia_integrata": "Integrated AI",
+    "sostenibilita": "Sustainability",
+    "panoramica": "Overview",
+    "offerte": "Offers",
+    "consulenza": "Consulting"
+  },
+  "hero": {
+    "title": "The Future of Cloud, Powered by Artificial Intelligence",
+    "subtitle": "Transform your infrastructure, multiply your intelligence. CloudNova offers innovative cloud solutions with integrated AI for businesses of all sizes.",
+    "cta_offerte": "Discover Our Offers",
+    "cta_contatti": "Contact Us"
+  },
+  "chi_siamo": {
+    "title": "About Us",
+    "subtitle": "Innovators in the cloud sector with a focus on artificial intelligence integration",
+    "storia_title": "Our Story",
+    "storia_text": "CloudNova was born in 2020 from the vision of a group of experts in cloud computing and artificial intelligence with the goal of revolutionizing the way companies use and manage their digital infrastructures.",
+    "storia_text2": "In a rapidly evolving technological world, we identified the need for cloud solutions that not only provided computing power and storage, but also natively integrated artificial intelligence capabilities to optimize every aspect of infrastructure.",
+    "missione_title": "Our Mission",
+    "missione_text": "Our mission is to democratize access to advanced cloud technologies and artificial intelligence, making these powerful resources available and accessible to organizations of all sizes.",
+    "missione_text2": "We believe that the combination of robust cloud infrastructures and integrated artificial intelligence represents the future of business technology, and we are committed to leading this transformation."
+  },
+  "valori": {
+    "title": "Our Values",
+    "subtitle": "Fundamental principles that guide our every action",
+    "integrita_title": "Integrity",
+    "integrita_text": "We act with honesty and transparency in every interaction with customers, partners, and collaborators, always keeping our commitments.",
+    "innovazione_title": "Innovation",
+    "innovazione_text": "We constantly research new solutions and technologies to anticipate market needs and offer cutting-edge services.",
+    "collaborazione_title": "Collaboration",
+    "collaborazione_text": "We believe in the power of teamwork and knowledge sharing to achieve excellent results.",
+    "sostenibilita_title": "Sustainability",
+    "sostenibilita_text": "We are committed to reducing the environmental impact of our operations and promoting sustainable practices in the technology sector."
+  },
+  "cta_section": {
+    "title": "Ready to transform your infrastructure?",
+    "text": "Discover how CloudNova can help you optimize your operations and leverage the power of artificial intelligence.",
+    "button": "Book a Free Consultation"
+  },
+  "infrastruttura": {
+    "title": "Infrastructure",
+    "subtitle": "State-of-the-art data centers designed for performance, security, and sustainability",
+    "datacenter_title": "Next-Generation Data Centers",
+    "datacenter_text": "Our data centers are designed according to the highest standards of security, efficiency, and reliability. We use state-of-the-art hardware and redundant architectures to ensure 99.99% uptime.",
+    "sicurezza_title": "Advanced Security",
+    "sicurezza_text": "Multi-level physical and digital protection with 24/7 monitoring and intrusion detection systems.",
+    "connettivita_title": "Global Connectivity",
+    "connettivita_text": "High-speed network with redundant connections to multiple providers to ensure minimal latency.",
+    "alimentazione_title": "Redundant Power",
+    "alimentazione_text": "Multiple power systems with backup generators and UPS to ensure operational continuity.",
+    "raffreddamento_title": "Efficient Cooling",
+    "raffreddamento_text": "Advanced cooling systems with energy-saving technologies and precise temperature control.",
+    "cta": "Discover Housing Solutions"
+  },
+  "footer": {
+    "azienda": "Company",
+    "servizi": "Services",
+    "supporto": "Support",
+    "legale": "Legal",
+    "centro_assistenza": "Help Center",
+    "faq": "FAQ",
+    "documentazione": "Documentation",
+    "status_servizi": "Service Status",
+    "privacy_policy": "Privacy Policy",
+    "termini_servizio": "Terms of Service",
+    "cookie_policy": "Cookie Policy",
+    "gdpr": "GDPR",
+    "newsletter_title": "Newsletter",
+    "newsletter_text": "Subscribe to our newsletter to receive updates, news, and special offers.",
+    "newsletter_button": "Subscribe",
+    "social_title": "Follow Us on Social Media",
+    "copyright": "© 2025 CloudNova. All rights reserved."
+  },
+  "toast": {
+    "language_changed": "Language changed to: English"
+  }
+}

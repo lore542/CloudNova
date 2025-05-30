@@ -1,0 +1,88 @@
+{
+  "navbar": {
+    "azienda": "Azienda",
+    "tecnologia": "Tecnologia",
+    "servizi": "Servizi",
+    "clienti": "Clienti",
+    "contatti": "Contatti",
+    "chiSiamo": "Chi Siamo",
+    "nostri_valori": "I Nostri Valori",
+    "perche_sceglierci": "Perché Sceglierci",
+    "infrastruttura": "Infrastruttura",
+    "ia_integrata": "IA Integrata",
+    "sostenibilita": "Sostenibilità",
+    "panoramica": "Panoramica",
+    "offerte": "Offerte",
+    "consulenza": "Consulenza"
+  },
+  "hero": {
+    "title": "Il Futuro del Cloud, Potenziato dall'Intelligenza Artificiale",
+    "subtitle": "Trasforma la tua infrastruttura, moltiplica la tua intelligenza. CloudNova offre soluzioni cloud innovative con IA integrata per aziende di ogni dimensione.",
+    "cta_offerte": "Scopri le Offerte",
+    "cta_contatti": "Contattaci"
+  },
+  "chi_siamo": {
+    "title": "Chi Siamo",
+    "subtitle": "Innovatori nel settore cloud con un focus sull'integrazione dell'intelligenza artificiale",
+    "storia_title": "La Nostra Storia",
+    "storia_text": "CloudNova nasce nel 2020 dalla visione di un gruppo di esperti in cloud computing e intelligenza artificiale con l'obiettivo di rivoluzionare il modo in cui le aziende utilizzano e gestiscono le loro infrastrutture digitali.",
+    "storia_text2": "In un mondo in rapida evoluzione tecnologica, abbiamo identificato la necessità di soluzioni cloud che non solo fornissero potenza di calcolo e storage, ma che integrassero nativamente capacità di intelligenza artificiale per ottimizzare ogni aspetto dell'infrastruttura.",
+    "missione_title": "La Nostra Missione",
+    "missione_text": "La nostra missione è democratizzare l'accesso alle tecnologie cloud avanzate e all'intelligenza artificiale, rendendo queste potenti risorse disponibili e accessibili a organizzazioni di ogni dimensione.",
+    "missione_text2": "Crediamo che la combinazione di infrastrutture cloud robuste e intelligenza artificiale integrata rappresenti il futuro della tecnologia aziendale, e siamo impegnati a guidare questa trasformazione."
+  },
+  "valori": {
+    "title": "I Nostri Valori",
+    "subtitle": "Principi fondamentali che guidano ogni nostra azione",
+    "integrita_title": "Integrità",
+    "integrita_text": "Agiamo con onestà e trasparenza in ogni interazione con clienti, partner e collaboratori, mantenendo sempre i nostri impegni.",
+    "innovazione_title": "Innovazione",
+    "innovazione_text": "Ricerchiamo costantemente nuove soluzioni e tecnologie per anticipare le esigenze del mercato e offrire servizi all'avanguardia.",
+    "collaborazione_title": "Collaborazione",
+    "collaborazione_text": "Crediamo nel potere del lavoro di squadra e nella condivisione delle conoscenze per raggiungere risultati eccellenti.",
+    "sostenibilita_title": "Sostenibilità",
+    "sostenibilita_text": "Ci impegniamo a ridurre l'impatto ambientale delle nostre operazioni e a promuovere pratiche sostenibili nel settore tecnologico."
+  },
+  "cta_section": {
+    "title": "Pronto a trasformare la tua infrastruttura?",
+    "text": "Scopri come CloudNova può aiutarti a ottimizzare le tue operazioni e a sfruttare il potere dell'intelligenza artificiale.",
+    "button": "Prenota una Consulenza Gratuita"
+  },
+  "infrastruttura": {
+    "title": "Infrastruttura",
+    "subtitle": "Data center all'avanguardia progettati per prestazioni, sicurezza e sostenibilità",
+    "datacenter_title": "Data Center di Ultima Generazione",
+    "datacenter_text": "I nostri data center sono progettati secondo i più elevati standard di sicurezza, efficienza e affidabilità. Utilizziamo hardware di ultima generazione e architetture ridondanti per garantire un uptime del 99,99%.",
+    "sicurezza_title": "Sicurezza Avanzata",
+    "sicurezza_text": "Protezione fisica e digitale multi-livello con monitoraggio 24/7 e sistemi di rilevamento delle intrusioni.",
+    "connettivita_title": "Connettività Globale",
+    "connettivita_text": "Rete ad alta velocità con connessioni ridondanti a provider multipli per garantire latenza minima.",
+    "alimentazione_title": "Alimentazione Ridondante",
+    "alimentazione_text": "Sistemi di alimentazione multipli con generatori di backup e UPS per garantire continuità operativa.",
+    "raffreddamento_title": "Raffreddamento Efficiente",
+    "raffreddamento_text": "Sistemi di raffreddamento avanzati con tecnologie di risparmio energetico e controllo preciso della temperatura.",
+    "cta": "Scopri le Soluzioni Housing"
+  },
+  "footer": {
+    "azienda": "Azienda",
+    "servizi": "Servizi",
+    "supporto": "Supporto",
+    "legale": "Legale",
+    "centro_assistenza": "Centro Assistenza",
+    "faq": "FAQ",
+    "documentazione": "Documentazione",
+    "status_servizi": "Status Servizi",
+    "privacy_policy": "Privacy Policy",
+    "termini_servizio": "Termini di Servizio",
+    "cookie_policy": "Cookie Policy",
+    "gdpr": "GDPR",
+    "newsletter_title": "Newsletter",
+    "newsletter_text": "Iscriviti alla nostra newsletter per ricevere aggiornamenti, novità e offerte speciali.",
+    "newsletter_button": "Iscriviti",
+    "social_title": "Seguici sui Social",
+    "copyright": "© 2025 CloudNova. Tutti i diritti riservati."
+  },
+  "toast": {
+    "language_changed": "Lingua cambiata in: Italiano"
+  }
+}
