@@ -84,18 +84,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const itemTotal = item.price * item.quantity;
             subtotal += itemTotal;
 
-            checkoutHTML += `
-                <div class="d-flex mb-3 justify-content-end" style="max-width: 500px; margin-left: auto;">
-                    <div class="flex-shrink-0">
-                        <img src="${item.img || 'img/placeholder.jpg'}" alt="${item.name}" width="60" height="60" class="rounded">
-                    </div>
-                    <div class="flex-grow-1 ms-3 text-end">
-                        <h6 class="mb-0">${item.name}</h6>
-                        <p class="text-muted small mb-0">Quantità: ${item.quantity}</p>
-                        <p class="mb-0">€${itemTotal.toFixed(2)}</p>
-                    </div>
-                </div>
-            `;
+           checkoutHTML += `
+    <div class="mb-3 text-end" style="max-width: 500px; margin-left: auto;">
+        <h6 class="mb-0">${item.name}</h6>
+        <p class="text-muted small mb-0">Quantità: ${item.quantity}</p>
+        <p class="mb-0">€${itemTotal.toFixed(2)}</p>
+    </div>
+`;
         });
 
         checkoutItemsContainer.innerHTML = checkoutHTML;
