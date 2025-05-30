@@ -197,26 +197,31 @@
         </div>
     </div>
 
-    <!-- PayPal -->
+ <!-- Opzione: PayPal -->
     <div class="col-12">
         <div class="form-check mt-3">
             <input class="form-check-input" type="radio" name="paymentMethod" id="paypal">
-            <label class="form-check-label" for="paypal">
-                PayPal
-            </label>
+            <label class="form-check-label" for="paypal">PayPal</label>
+        </div>
+        <div id="paypalForm" class="mt-3 d-none">
+            <label for="paypalEmail" class="form-label">Email PayPal *</label>
+            <input type="email" class="form-control" id="paypalEmail" required>
         </div>
     </div>
 
-    <!-- Bonifico Bancario -->
+    <!-- Opzione: Bonifico Bancario -->
     <div class="col-12">
         <div class="form-check mt-3">
             <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer">
-            <label class="form-check-label" for="bankTransfer">
-                Bonifico Bancario
-            </label>
+            <label class="form-check-label" for="bankTransfer">Bonifico Bancario</label>
+        </div>
+        <div id="bankTransferForm" class="mt-3 d-none">
+            <p>Effettua il bonifico al seguente IBAN:</p>
+            <p><strong>IT60X0542811101000000123456</strong></p>
+            <p>Intestato a: <strong>CloudNova SRL</strong></p>
+            <p>Causale: il numero ordine sarà visibile dopo la conferma</p>
         </div>
     </div>
-</div>
 
                                 
                                 <div class="row mt-5">
