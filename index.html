@@ -15,11 +15,40 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer-fix.css">
+    <link rel="stylesheet" id="silktide-consent-manager-css" href="path-to-css/silktide-consent-manager.css">
+<script src="path-to-js/silktide-consent-manager.js"></script>
+<script>
+silktideCookieBannerManager.updateCookieBannerConfig({
+  background: {
+    showBackground: true
+  },
+  cookieIcon: {
+    position: "bottomRight"
+  },
+  cookieTypes: [],
+  text: {
+    banner: {
+      description: "<div class=\"Message__Component-sc-25a8af9c-0 earmLf eapp-cookie-consent-message-component eapp-cookie-consent-message-mobile\"><div class=\"Message__TextContainer-sc-25a8af9c-2 abzsC eapp-cookie-consent-message-text\"><span class=\"Message__Text-sc-25a8af9c-3 iOKDRb eapp-cookie-consent-message-textInner\">Questo\n sito Web utilizza i cookie per assicurarti di ottenere la migliore \nesperienza sul nostro sito web. Utilizzando il nostro sito acconsenti ai\n cookie.&nbsp;</span><a href=\"https://www.termsfeed.com/live/981def88-0081-43e6-b695-c87d01053b76\" target=\"_blank\" role=\"link\" aria-label=\"Per saperne di più\" tabindex=\"0\" rel=\"noreferrer\" class=\"Message__PrivacyPolicyLink-sc-25a8af9c-1 ibzpYs eapp-cookie-consent-message-componentMore\">Per saperne di più</a></div></div>",
+      acceptAllButtonText: "Accetta",
+      acceptAllButtonAccessibleLabel: "Accept all cookies",
+      rejectNonEssentialButtonText: "Rifiuta non necessari",
+      rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+      preferencesButtonText: "  ",
+      preferencesButtonAccessibleLabel: ""
+    },
+    preferences: {
+      title: "Customize your cookie preferences",
+      description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
+      creditLinkText: " ",
+      creditLinkAccessibleLabel: " "
+    }
+  }
+});
+</script>
+
 </head>
 <body>
-    <!-- Elfsight Cookie Consent | Untitled Cookie Consent -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-e6e50d9b-1fdc-4843-a48f-60f96e2a2a8f" data-elfsight-app-lazy></div>
+ 
     <!-- Header -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
