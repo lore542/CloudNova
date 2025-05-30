@@ -153,6 +153,7 @@ a:hover {
     transform: rotate(180deg);
     z-index: 1; /* Assicura che l'onda sia sotto i pulsanti */
     border: none; /* Rimuove qualsiasi bordo */
+
 }
 
 .hero-wave svg {
