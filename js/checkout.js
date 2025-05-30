@@ -40,9 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     creditCardForm.classList.add('d-none');
                 }
             }
-            
-            // Nota: paypalForm e bankTransferForm non esistono nell'HTML attuale
-            // ma potrebbero essere aggiunti in futuro
         }
     }
     
@@ -58,16 +55,13 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Validazione del form
             if (this.checkValidity()) {
-                // Genera un numero d'ordine casuale
                 const orderNumber = 'CN-' + Math.floor(100000 + Math.random() * 900000);
                 
-                // Aggiorna il numero d'ordine nel modal
                 const orderNumberElement = document.getElementById('orderNumber');
                 if (orderNumberElement) {
                     orderNumberElement.textContent = orderNumber;
                 }
                 
-                // Imposta la data dell'ordine
                 const today = new Date();
                 const formattedDate = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
                 const orderDateElement = document.getElementById('orderDate');
@@ -75,17 +69,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     orderDateElement.textContent = formattedDate;
                 }
                 
-                // Mostra il modal di conferma
                 if (orderConfirmationModalInstance) {
                     orderConfirmationModalInstance.show();
                 }
                 
-                // Svuota il carrello
                 if (window.clearCart) {
                     window.clearCart();
                 }
             } else {
-                // Aggiungi la classe was-validated per mostrare i messaggi di errore
                 this.classList.add('was-validated');
             }
         });
@@ -93,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Funzione per caricare gli articoli dal carrello nella pagina di checkout
     function loadCheckoutItems() {
-        // Ottieni gli articoli dal carrello
         const cart = window.getCartItems ? window.getCartItems() : [];
         
         if (!checkoutItemsContainer) return;
@@ -112,11 +102,11 @@ document.addEventListener('DOMContentLoaded', function() {
             subtotal += itemTotal;
             
             checkoutHTML += `
-                <div class="d-flex mb-3">
+                <div class="d-flex mb-3 justify-content-end" style="max-width: 500px; margin-left: auto;">
                     <div class="flex-shrink-0">
                         <img src="${item.img || 'img/placeholder.jpg'}" alt="${item.name}" width="60" height="60" class="rounded">
                     </div>
-                    <div class="flex-grow-1 ms-3">
+                    <div class="flex-grow-1 ms-3 text-end">
                         <h6 class="mb-0">${item.name}</h6>
                         <p class="text-muted small mb-0">Quantità: ${item.quantity}</p>
                         <p class="mb-0">€${itemTotal.toFixed(2)}</p>
