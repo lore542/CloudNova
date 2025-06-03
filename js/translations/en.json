@@ -1,19 +1,19 @@
 {
   "navbar": {
     "azienda": "Company",
-    "tecnologia": "Technology",
-    "servizi": "Services",
-    "clienti": "Clients",
-    "contatti": "Contact",
     "chiSiamo": "About Us",
     "nostri_valori": "Our Values",
     "perche_sceglierci": "Why Choose Us",
+    "tecnologia": "Technology",
     "infrastruttura": "Infrastructure",
-    "ia_integrata": "Integrated AI",
+    "ia_integrata": "AI Integration",
     "sostenibilita": "Sustainability",
+    "servizi": "Services",
     "panoramica": "Overview",
     "offerte": "Offers",
-    "consulenza": "Consulting"
+    "consulenza": "Consulting",
+    "clienti": "Clients",
+    "contatti": "Contact"
   },
   "hero": {
     "title": "The Future of Cloud, Powered by Artificial Intelligence",
@@ -26,7 +26,7 @@
     "subtitle": "Innovators in the cloud sector with a focus on artificial intelligence integration",
     "storia_title": "Our Story",
     "storia_text": "CloudNova was born in 2020 from the vision of a group of experts in cloud computing and artificial intelligence with the goal of revolutionizing the way companies use and manage their digital infrastructures.",
-    "storia_text2": "In a rapidly evolving technological world, we identified the need for cloud solutions that not only provided computing power and storage, but also natively integrated artificial intelligence capabilities to optimize every aspect of infrastructure.",
+    "storia_text2": "In a rapidly evolving technological world, we identified the need for cloud solutions that not only provided computing power and storage, but also natively integrated artificial intelligence capabilities to optimize every aspect of the infrastructure.",
     "missione_title": "Our Mission",
     "missione_text": "Our mission is to democratize access to advanced cloud technologies and artificial intelligence, making these powerful resources available and accessible to organizations of all sizes.",
     "missione_text2": "We believe that the combination of robust cloud infrastructures and integrated artificial intelligence represents the future of business technology, and we are committed to leading this transformation."
@@ -63,6 +63,98 @@
     "raffreddamento_text": "Advanced cooling systems with energy-saving technologies and precise temperature control.",
     "cta": "Discover Housing Solutions"
   },
+  "ia_integrata": {
+    "title": "AI Integration",
+    "subtitle": "Artificial intelligence that enhances every aspect of your cloud infrastructure",
+    "main_title": "Artificial Intelligence at the Service of the Cloud",
+    "main_text": "Our platform natively integrates advanced artificial intelligence technologies that automatically optimize every aspect of your cloud infrastructure, from load balancing to security, from resource allocation to failure prediction.",
+    "ottimizzazione_title": "Automatic Optimization",
+    "ottimizzazione_text": "Machine learning algorithms that continuously analyze usage patterns to automatically optimize resource allocation, reducing costs and improving performance.",
+    "sicurezza_title": "Predictive Security",
+    "sicurezza_text": "AI-based threat detection systems that identify and neutralize potential vulnerabilities before they can be exploited.",
+    "analisi_title": "Predictive Analysis",
+    "analisi_text": "Forecasting of load peaks and future resource needs for proactive capacity planning."
+  },
+  "sostenibilita": {
+    "title": "Sustainability",
+    "subtitle": "Eco-friendly cloud solutions for a greener future",
+    "main_title": "Our Commitment to the Environment",
+    "main_text": "At CloudNova, we believe that technology should serve not only businesses but also the planet. For this reason, we have implemented numerous initiatives to reduce the environmental impact of our operations and help our customers do the same.",
+    "energia_title": "Renewable Energy",
+    "energia_text": "Our data centers are powered 100% by renewable energy sources, significantly reducing our carbon footprint.",
+    "hardware_title": "Sustainable Hardware",
+    "hardware_text": "We use recyclable components and adopt responsible disposal practices to reduce electronic waste.",
+    "raffreddamento_title": "Efficient Cooling",
+    "raffreddamento_text": "Innovative cooling systems that reduce energy consumption and minimize water usage.",
+    "carbon_title": "Carbon Offset",
+    "carbon_text": "We invest in carbon offset projects to neutralize the residual emissions from our operations."
+  },
+  "servizi": {
+    "title": "Our Services",
+    "subtitle": "Complete cloud solutions for every business need",
+    "cloud_ia_title": "AI Cloud",
+    "cloud_ia_text": "Cloud infrastructure powered by artificial intelligence to automatically optimize performance, security, and costs. Ideal for companies seeking maximum performance with minimal management effort.",
+    "hosting_title": "Hosting",
+    "hosting_text": "Flexible and scalable hosting solutions for websites, applications, and online services. From small businesses to enterprises, we offer customized plans for every need with 24/7 support.",
+    "housing_title": "Housing",
+    "housing_text": "Host your servers in our state-of-the-art data centers, benefiting from enterprise-class infrastructure, redundant connectivity, and top-level physical and digital security.",
+    "feature_1": "Automatic resource optimization",
+    "feature_2": "Advanced predictive security",
+    "feature_3": "Intelligent scalability",
+    "feature_4": "Predictive data analysis",
+    "feature_5": "Optimized shared hosting",
+    "feature_6": "VPS with dedicated resources",
+    "feature_7": "High-performance dedicated servers",
+    "feature_8": "Specialized CMS solutions",
+    "feature_9": "Dedicated rack space",
+    "feature_10": "Multi-homed connectivity",
+    "feature_11": "Redundant power",
+    "feature_12": "24/7 monitoring",
+    "cta": "Learn More",
+    "view_all": "View All Offers"
+  },
+  "testimonials": {
+    "title": "Our Clients",
+    "subtitle": "Discover what companies that have chosen CloudNova say about us",
+    "client_1_name": "Mark White",
+    "client_1_position": "CTO, TechSolutions",
+    "client_1_text": "\"Since we migrated our infrastructure to CloudNova, we've seen a 40% improvement in performance and a 25% reduction in operational costs. The AI integration has automated many processes that previously required manual interventions.\"",
+    "client_2_name": "Laura Johnson",
+    "client_2_position": "CEO, E-Commerce Plus",
+    "client_2_text": "\"CloudNova's automatic scalability allowed us to handle traffic spikes during Black Friday without issues, with a 300% increase in visits. The technical support was exceptional, responding to our requests within minutes.\"",
+    "client_3_name": "Alexander Green",
+    "client_3_position": "CIO, FinTech Innovations",
+    "client_3_text": "\"CloudNova's predictive security blocked several attack attempts before they could cause damage. For a financial sector company like ours, this level of protection is essential. We highly recommend their services.\"",
+    "trusted_title": "Companies that trust us"
+  },
+  "contatti": {
+    "title": "Contact Us",
+    "subtitle": "We're here to answer all your questions",
+    "info_title": "Contact Information",
+    "sede_title": "Headquarters",
+    "sede_address": "Innovation Street, 123<br>00100 Rome, Italy",
+    "telefono_title": "Phone",
+    "telefono_numbers": "+39 06 1234567<br>+39 06 7654321",
+    "email_title": "Email",
+    "email_addresses": "info@cloudnova.it<br>support@cloudnova.it",
+    "orari_title": "Hours",
+    "orari_text": "Mon - Fri: 9:00 AM - 6:00 PM<br>Sat - Sun: Closed",
+    "social_title": "Follow Us on Social Media",
+    "form_title": "Send Us a Message",
+    "form_name": "Full Name",
+    "form_email": "Email",
+    "form_phone": "Phone",
+    "form_subject": "Subject",
+    "form_message": "Message",
+    "form_privacy": "I have read and accept the",
+    "form_privacy_link": "Privacy Policy",
+    "form_submit": "Send Message",
+    "validation_name": "Please enter your full name.",
+    "validation_email": "Please enter a valid email address.",
+    "validation_subject": "Please enter the subject of your message.",
+    "validation_message": "Please enter your message.",
+    "validation_privacy": "You must accept the Privacy Policy to continue."
+  },
   "footer": {
     "azienda": "Company",
     "servizi": "Services",
@@ -82,7 +174,7 @@
     "social_title": "Follow Us on Social Media",
     "copyright": "© 2025 CloudNova. All rights reserved."
   },
-  "toast": {
-    "language_changed": "Language changed to: English"
+  "language_toast": {
+    "changed": "Language changed to English"
   }
 }

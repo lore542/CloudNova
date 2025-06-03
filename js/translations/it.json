@@ -1,19 +1,19 @@
 {
   "navbar": {
     "azienda": "Azienda",
-    "tecnologia": "Tecnologia",
-    "servizi": "Servizi",
-    "clienti": "Clienti",
-    "contatti": "Contatti",
     "chiSiamo": "Chi Siamo",
     "nostri_valori": "I Nostri Valori",
     "perche_sceglierci": "Perché Sceglierci",
+    "tecnologia": "Tecnologia",
     "infrastruttura": "Infrastruttura",
     "ia_integrata": "IA Integrata",
     "sostenibilita": "Sostenibilità",
+    "servizi": "Servizi",
     "panoramica": "Panoramica",
     "offerte": "Offerte",
-    "consulenza": "Consulenza"
+    "consulenza": "Consulenza",
+    "clienti": "Clienti",
+    "contatti": "Contatti"
   },
   "hero": {
     "title": "Il Futuro del Cloud, Potenziato dall'Intelligenza Artificiale",
@@ -63,6 +63,98 @@
     "raffreddamento_text": "Sistemi di raffreddamento avanzati con tecnologie di risparmio energetico e controllo preciso della temperatura.",
     "cta": "Scopri le Soluzioni Housing"
   },
+  "ia_integrata": {
+    "title": "IA Integrata",
+    "subtitle": "Intelligenza artificiale che potenzia ogni aspetto della tua infrastruttura cloud",
+    "main_title": "Intelligenza Artificiale al Servizio del Cloud",
+    "main_text": "La nostra piattaforma integra nativamente tecnologie di intelligenza artificiale avanzate che ottimizzano automaticamente ogni aspetto della tua infrastruttura cloud, dal bilanciamento del carico alla sicurezza, dall'allocazione delle risorse alla previsione dei guasti.",
+    "ottimizzazione_title": "Ottimizzazione Automatica",
+    "ottimizzazione_text": "Algoritmi di machine learning che analizzano continuamente i pattern di utilizzo per ottimizzare automaticamente l'allocazione delle risorse, riducendo i costi e migliorando le prestazioni.",
+    "sicurezza_title": "Sicurezza Predittiva",
+    "sicurezza_text": "Sistemi di rilevamento delle minacce basati su IA che identificano e neutralizzano potenziali vulnerabilità prima che possano essere sfruttate.",
+    "analisi_title": "Analisi Predittiva",
+    "analisi_text": "Previsione dei picchi di carico e delle necessità future di risorse per una pianificazione proattiva della capacità."
+  },
+  "sostenibilita": {
+    "title": "Sostenibilità",
+    "subtitle": "Soluzioni cloud eco-friendly per un futuro più verde",
+    "main_title": "Il Nostro Impegno per l'Ambiente",
+    "main_text": "In CloudNova, crediamo che la tecnologia debba essere al servizio non solo delle aziende, ma anche del pianeta. Per questo motivo, abbiamo implementato numerose iniziative per ridurre l'impatto ambientale delle nostre operazioni e aiutare i nostri clienti a fare lo stesso.",
+    "energia_title": "Energia Rinnovabile",
+    "energia_text": "I nostri data center sono alimentati al 100% da fonti di energia rinnovabile, riducendo significativamente la nostra impronta di carbonio.",
+    "hardware_title": "Hardware Sostenibile",
+    "hardware_text": "Utilizziamo componenti riciclabili e adottiamo pratiche di smaltimento responsabile per ridurre i rifiuti elettronici.",
+    "raffreddamento_title": "Raffreddamento Efficiente",
+    "raffreddamento_text": "Sistemi di raffreddamento innovativi che riducono il consumo energetico e minimizzano l'uso di acqua.",
+    "carbon_title": "Carbon Offset",
+    "carbon_text": "Investiamo in progetti di compensazione del carbonio per neutralizzare le emissioni residue delle nostre operazioni."
+  },
+  "servizi": {
+    "title": "I Nostri Servizi",
+    "subtitle": "Soluzioni cloud complete per ogni esigenza aziendale",
+    "cloud_ia_title": "Cloud IA",
+    "cloud_ia_text": "Infrastruttura cloud potenziata dall'intelligenza artificiale per ottimizzare automaticamente prestazioni, sicurezza e costi. Ideale per aziende che cercano il massimo delle prestazioni con il minimo sforzo gestionale.",
+    "hosting_title": "Hosting",
+    "hosting_text": "Soluzioni di hosting flessibili e scalabili per siti web, applicazioni e servizi online. Dalla piccola impresa all'enterprise, offriamo piani personalizzati per ogni esigenza con supporto 24/7.",
+    "housing_title": "Housing",
+    "housing_text": "Ospita i tuoi server nei nostri data center all'avanguardia, beneficiando di infrastrutture di classe enterprise, connettività ridondante e sicurezza fisica e digitale di massimo livello.",
+    "feature_1": "Ottimizzazione automatica delle risorse",
+    "feature_2": "Sicurezza predittiva avanzata",
+    "feature_3": "Scalabilità intelligente",
+    "feature_4": "Analisi predittiva dei dati",
+    "feature_5": "Hosting condiviso ottimizzato",
+    "feature_6": "VPS con risorse dedicate",
+    "feature_7": "Server dedicati ad alte prestazioni",
+    "feature_8": "Soluzioni specializzate per CMS",
+    "feature_9": "Spazio rack dedicato",
+    "feature_10": "Connettività multi-homed",
+    "feature_11": "Alimentazione ridondante",
+    "feature_12": "Monitoraggio 24/7",
+    "cta": "Scopri di Più",
+    "view_all": "Visualizza Tutte le Offerte"
+  },
+  "testimonials": {
+    "title": "I Nostri Clienti",
+    "subtitle": "Scopri cosa dicono di noi le aziende che hanno scelto CloudNova",
+    "client_1_name": "Marco Bianchi",
+    "client_1_position": "CTO, TechSolutions",
+    "client_1_text": "\"Da quando abbiamo migrato la nostra infrastruttura su CloudNova, abbiamo visto un miglioramento del 40% nelle prestazioni e una riduzione del 25% dei costi operativi. L'integrazione dell'IA ha automatizzato molti processi che prima richiedevano interventi manuali.\"",
+    "client_2_name": "Laura Rossi",
+    "client_2_position": "CEO, E-Commerce Plus",
+    "client_2_text": "\"La scalabilità automatica di CloudNova ci ha permesso di gestire senza problemi i picchi di traffico durante il Black Friday, con un aumento del 300% delle visite. Il supporto tecnico è stato eccezionale, rispondendo in pochi minuti alle nostre richieste.\"",
+    "client_3_name": "Alessandro Verdi",
+    "client_3_position": "CIO, FinTech Innovations",
+    "client_3_text": "\"La sicurezza predittiva di CloudNova ha bloccato diversi tentativi di attacco prima che potessero causare danni. Per un'azienda del settore finanziario come la nostra, questo livello di protezione è fondamentale. Consigliamo vivamente i loro servizi.\"",
+    "trusted_title": "Aziende che si fidano di noi"
+  },
+  "contatti": {
+    "title": "Contattaci",
+    "subtitle": "Siamo qui per rispondere a tutte le tue domande",
+    "info_title": "Informazioni di Contatto",
+    "sede_title": "Sede Principale",
+    "sede_address": "Via dell'Innovazione, 123<br>00100 Roma, Italia",
+    "telefono_title": "Telefono",
+    "telefono_numbers": "+39 06 1234567<br>+39 06 7654321",
+    "email_title": "Email",
+    "email_addresses": "info@cloudnova.it<br>supporto@cloudnova.it",
+    "orari_title": "Orari",
+    "orari_text": "Lun - Ven: 9:00 - 18:00<br>Sab - Dom: Chiuso",
+    "social_title": "Seguici sui Social",
+    "form_title": "Inviaci un Messaggio",
+    "form_name": "Nome e Cognome",
+    "form_email": "Email",
+    "form_phone": "Telefono",
+    "form_subject": "Oggetto",
+    "form_message": "Messaggio",
+    "form_privacy": "Ho letto e accetto la",
+    "form_privacy_link": "Privacy Policy",
+    "form_submit": "Invia Messaggio",
+    "validation_name": "Inserisci il tuo nome e cognome.",
+    "validation_email": "Inserisci un indirizzo email valido.",
+    "validation_subject": "Inserisci l'oggetto del messaggio.",
+    "validation_message": "Inserisci il tuo messaggio.",
+    "validation_privacy": "Devi accettare la Privacy Policy per continuare."
+  },
   "footer": {
     "azienda": "Azienda",
     "servizi": "Servizi",
@@ -82,7 +174,7 @@
     "social_title": "Seguici sui Social",
     "copyright": "© 2025 CloudNova. Tutti i diritti riservati."
   },
-  "toast": {
-    "language_changed": "Lingua cambiata in: Italiano"
+  "language_toast": {
+    "changed": "Lingua cambiata in Italiano"
   }
 }
