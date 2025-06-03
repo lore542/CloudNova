@@ -45,9 +45,9 @@ a:hover {
 
 #chi-siamo {
     position: relative;
-    padding-top: 80px; /* Aggiunto padding superiore per evitare che il contenuto venga tagliato */
-    margin-top: 20px; /* Aggiunto margine superiore per migliorare la spaziatura */
-    border-top: none; /* Rimuove qualsiasi bordo superiore */
+    padding-top: 80px; /* padding superiore per evitare che il contenuto venga tagliato */
+    margin-top: 20px; /*  margine superiore per migliorare la spaziatura */
+    border-top: none; 
 }
 
 .section-title {
@@ -57,7 +57,7 @@ a:hover {
     color: var(--gray-800);
 }
 
-/* Rimossa la linea blu sotto i titoli delle sezioni */
+
 /* .section-title::after {
     content: '';
     position: absolute;
@@ -137,10 +137,10 @@ a:hover {
 }
 
 #hero {
-    padding-top: 120px; /* Aumentato il padding superiore per evitare che il contenuto venga tagliato */
-    margin-top: -20px; /* Margine negativo per compensare lo spazio extra */
-    padding-bottom: 100px; /* Aumentato il padding inferiore per evitare che i pulsanti vengano coperti dall'onda */
-    border-bottom: none; /* Rimuove qualsiasi bordo inferiore */
+    padding-top: 120px; 
+    margin-top: -20px; 
+    padding-bottom: 100px; 
+    border-bottom: none; 
 }
 
 .hero-wave {
@@ -151,7 +151,7 @@ a:hover {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    z-index: 1; /* Assicura che l'onda sia sotto i pulsanti */
+    z-index: 1; 
     border: none; /* Rimuove qualsiasi bordo */
 
 }
@@ -166,10 +166,10 @@ a:hover {
     height: 100px;
 }
 
-/* Assicura che i pulsanti nella hero section siano sopra l'onda */
+
 #hero .btn {
     position: relative;
-    z-index: 2; /* Valore più alto dell'onda per assicurarsi che i pulsanti siano sopra */
+    z-index: 2; 
 }
 
 /* Servizi */
